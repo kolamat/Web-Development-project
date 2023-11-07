@@ -21,9 +21,18 @@
     // var tweetCount = tweet.length;
     // alert('you have written ' + tweet.length + " characters you have " + (148 - tweet.length) + " characters remaining");
 
-    var tweet = prompt('Compose your tweet');
-    var tweetUnder140 = tweet.slice(0, 140);
-    alert(tweetUnder140);
+    // var tweet = prompt('Compose your tweet');
+    // var tweetUnder140 = tweet.slice(0, 140);
+    // alert(prompt('Compose your tweet:').slice(0, 140));
+
+    var name = prompt('what is your name');
+
+    var firstchar = name.slice(0, 1);
+    var uppercasefirstchar = firstchar.toUpperCase();
+    var restofname = name.slice(1, name.length);
+    restofname = restofname.toLowerCase();
+    var capitalisedname = uppercasefirstchar + restofname;
+    alert('Hello, ' + capitalisedname);
 
   </script>
 </body>
