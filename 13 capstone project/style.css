@@ -1,0 +1,41 @@
+* {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.top {
+    padding-top: 90px;
+    background-color: rgb(163, 112, 112);
+    position: relative;
+}
+
+h1 {
+    font-family: 'PT Serif', serif;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 50px auto 0 auto;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.bottom {
+    left: 160px;
+    position: relative;    
+}
+
+.TOP {
+    left: 650px;
+    position: relative; 
+}
