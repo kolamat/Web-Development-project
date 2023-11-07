@@ -13,11 +13,18 @@
   </h1>
 
   <script>
-    var name = "koladejohnsonll";
+    var name = "kolade";
+
+
     // name.length;
-    var tweet = prompt('Compose your tweet');
+    // var tweet = prompt('Compose your tweet');
     // var tweetCount = tweet.length;
-    alert('you have written ' + tweet.length + " characters you have " + (148 - tweet.length) + " characters remaining")
+    // alert('you have written ' + tweet.length + " characters you have " + (148 - tweet.length) + " characters remaining");
+
+    var tweet = prompt('Compose your tweet');
+    var tweetUnder140 = tweet.slice(0, 140);
+    alert(tweetUnder140);
+
   </script>
 </body>
 
