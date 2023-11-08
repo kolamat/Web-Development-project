@@ -65,6 +65,28 @@
     }
     getmilk();
 
+    //get-milk partB
+    function getMilk() {
+      console.log("leaveHouse");
+      console.log("moveRight");
+      console.log("moveRight");
+      console.log("moveUp");
+      console.log("moveUp");
+      console.log("moveUp");
+      console.log("moveUp");
+      console.log("moveRight");
+      console.log("moveRight");
+      console.log("moveLeft");
+      console.log("moveLeft");
+      console.log("moveDown");
+      console.log("moveDown");
+      console.log("moveDown");
+      console.log("moveDown");
+      console.log("moveLeft");
+      console.log("moveLeft");
+      console.log("enterHouse");
+    }
+
     //part three functions section b
     function main() {
       putBeeper();
@@ -89,7 +111,48 @@
       putBeeper();
     }
 
+    function main() {
+      beepersRight();
+      goUpTurnLeft();
+      beepersLeft();
+      goUpTurnRight();
+      beepersRight();
+      goUpTurnLeft();
+      beepersLeft();
+      goUpTurnRight();
+      beepersRight();
+    }
 
+    function goUpTurnRight() {
+      turnRight();
+      move();
+      turnRight();
+    }
+
+    function goUpTurnLeft() {
+      turnLeft();
+      move();
+      turnLeft();
+    }
+
+    function beepersRight() {
+      putBeeper();
+      move();
+      move();
+      putBeeper();
+      move();
+      move();
+      putBeeper();
+    }
+
+    function beepersLeft() {
+      move();
+      putBeeper();
+      move();
+      move();
+      putBeeper();
+      move();
+    }
   </script>
 </body>
 
