@@ -45,29 +45,29 @@
     // alert('Your Dog is ' + humanAge + ' years old in human years');
 
     //part three: functions
-    function getmilk() {
-      alert('LeavetheHouse')
-      alert('moveRight')
-      alert('moveRight')
-      alert('moveup')
-      alert('moveup')
-      alert('moveup')
-      alert('moveup')
-      alert('moveRight')
-      alert('moveRight')
-      alert('buyMilk')
-      alert('moveLeft')
-      alert('moveLeft')
-      alert('moveDown')
-      alert('moveDown')
-      alert('moveDown')
-      alert('entertheHouse')
-    }
-    getmilk();
+    // function getmilk() {
+    //   alert('LeavetheHouse')
+    //   alert('moveRight')
+    //   alert('moveRight')
+    //   alert('moveup')
+    //   alert('moveup')
+    //   alert('moveup')
+    //   alert('moveup')
+    //   alert('moveRight')
+    //   alert('moveRight')
+    //   alert('buyMilk')
+    //   alert('moveLeft')
+    //   alert('moveLeft')
+    //   alert('moveDown')
+    //   alert('moveDown')
+    //   alert('moveDown')
+    //   alert('entertheHouse')
+    // }
+    // getmilk();
 
     //get-milk partB
-    function getMilk() {
-      console.log("leaveHouse");
+    function getMilk(money) {
+      console.log("leavetheHouse");
       console.log("moveRight");
       console.log("moveRight");
       console.log("moveUp");
@@ -76,6 +76,10 @@
       console.log("moveUp");
       console.log("moveRight");
       console.log("moveRight");
+
+      var numberOfbottles = Math.floor(money / 1.5);
+      console.log("buy " + numberOfbottles + " bottles of milk")
+
       console.log("moveLeft");
       console.log("moveLeft");
       console.log("moveDown");
@@ -84,74 +88,87 @@
       console.log("moveDown");
       console.log("moveLeft");
       console.log("moveLeft");
-      console.log("enterHouse");
+      console.log("entertheHouse");
     }
+
+    getMilk(5);
 
     //part three functions section b
-    function main() {
-      putBeeper();
-      move();
-      turnLeft();
-      move();
-      putBeeper();
-      turnRight();
-      move();
-      turnLeft();
-      move();
-      putBeeper();
-      turnRight();
-      move();
-      turnLeft();
-      move();
-      putBeeper();
-      turnRight();
-      move();
-      turnLeft();
-      move();
-      putBeeper();
-    }
+    //     function main() {
+    //       putBeeper();
+    //       move();
+    //       turnLeft();
+    //       move();
+    //       putBeeper();
+    //       turnRight();
+    //       move();
+    //       turnLeft();
+    //       move();
+    //       putBeeper();
+    //       turnRight();
+    //       move();
+    //       turnLeft();
+    //       move();
+    //       putBeeper();
+    //       turnRight();
+    //       move();
+    //       turnLeft();
+    //       move();
+    //       putBeeper();
+    //     }
+    //
+    //     function main() {
+    //       beepersRight();
+    //       goUpTurnLeft();
+    //       beepersLeft();
+    //       goUpTurnRight();
+    //       beepersRight();
+    //       goUpTurnLeft();
+    //       beepersLeft();
+    //       goUpTurnRight();
+    //       beepersRight();
+    //     }
+    //
+    //     function goUpTurnRight() {
+    //       turnRight();
+    //       move();
+    //       turnRight();
+    //     }
+    //
+    //     function goUpTurnLeft() {
+    //       turnLeft();
+    //       move();
+    //       turnLeft();
+    //     }
+    //
+    //     function beepersRight() {
+    //       putBeeper();
+    //       move();
+    //       move();
+    //       putBeeper();
+    //       move();
+    //       move();
+    //       putBeeper();
+    //     }
+    //
+    //     function beepersLeft() {
+    //       move();
+    //       putBeeper();
+    //       move();
+    //       move();
+    //       putBeeper();
+    //       move();
+    //     }
 
-    function main() {
-      beepersRight();
-      goUpTurnLeft();
-      beepersLeft();
-      goUpTurnRight();
-      beepersRight();
-      goUpTurnLeft();
-      beepersLeft();
-      goUpTurnRight();
-      beepersRight();
-    }
+    //part three functions section c
+    function lifeInweeks(age) {
+      var yearsRemaining = 90 - age;
+      var days = yearsRemaining * 365;
+      var weeks = yearsRemaining * 52;
+      var months = yearsRemaining * 12;
 
-    function goUpTurnRight() {
-      turnRight();
-      move();
-      turnRight();
-    }
+      console.log('You have ' + days + 'days, ' + weeks + ' weeks,  and ' + months + 'months left.')
 
-    function goUpTurnLeft() {
-      turnLeft();
-      move();
-      turnLeft();
-    }
-
-    function beepersRight() {
-      putBeeper();
-      move();
-      move();
-      putBeeper();
-      move();
-      move();
-      putBeeper();
-    }
-
-    function beepersLeft() {
-      move();
-      putBeeper();
-      move();
-      move();
-      putBeeper();
-      move();
     }
   </script>
 </body>
